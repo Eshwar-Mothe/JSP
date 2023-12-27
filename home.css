@@ -162,8 +162,10 @@ img {
         /* Ensures the gallery takes full width on smaller screens */
         margin-top: 2rem;
     }
+
     #background-main img {
         margin-top: -5px;
         width: 34%;
         height: 3%;
+    }
 }
