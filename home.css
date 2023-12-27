@@ -160,10 +160,10 @@ img {
         /* You can adjust this based on your design */
         max-width: 100%;
         /* Ensures the gallery takes full width on smaller screens */
+        margin-top: 2rem;
     }
-}
-@media (max-width: 768px) {
-    .logo img {
+
+    #background-main img {
         margin-top: -5px;
         width: 34%;
         height: 3%;
