@@ -1,0 +1,153 @@
+body{
+    background-color: bisque;
+}
+.head{
+    color: red;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+p{
+    font-size: 20px;
+    margin-top: 15px;
+    text-align: center;
+    background-color: beige;
+}
+.flex-container, .karimnagar{
+    display: flex;
+    flex-wrap:wrap;
+    /* background-color: antiquewhite; */
+    margin-left: 1.4rem;
+}
+
+.flex-container a, .karimnagar a{
+    text-decoration: none;
+    color: black;
+}
+
+.flex-container a:hover, .karimnagar a:hover{
+    color: red;
+    border-color: aliceblue;
+    border-width: 3px;
+    transition: .2s ease-in;
+}
+
+.flex-container a{
+    width: 10rem;
+    margin: 13px;
+    margin-top: 10px;
+    margin-left: 15px;
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 2px solid silver;
+    border-radius: 9px;
+    text-align: center;
+    background-color: burlywood;
+    cursor: pointer;
+}
+
+.karimnagar a{
+    width: 17rem;
+    margin: 13px;
+    margin-top: 10px;
+    margin-left: 15px;
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 2px solid silver;
+    border-radius: 9px;
+    text-align: center;
+    background-color: burlywood;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.form{
+    /* border: 2px solid silver; */
+    width: 65%;
+    height: 70rem;
+    float: left;
+    line-height: 2rem;
+}
+
+.advantages{
+    width: 33%;
+    height: 70rem;
+    margin-left: 66%;
+    line-height: 2rem;
+    border: 2px solid silver;
+    padding: 5px;
+}
+
+.village1 option{
+    text-transform: uppercase;
+    padding: 5px;
+}
+
+.form{
+    display: flex;
+    clear: both;
+    flex-direction: column;
+    width: 65%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    margin: 0 auto;
+}
+
+.form label,
+.form input,
+.form select {
+    margin-left: 30px;
+    width: 45%;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.form select {
+    width: 90%;
+}
+
+.form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.form button:hover {
+    background-color: #45a049;
+}
+
+.advantages {
+    margin-top: 20px;
+}
+
+.advantages h4 {
+    color: #4CAF50;
+}
+
+.advantages li {
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+.form .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+button{margin-left: 70px;}
+button{margin-top: 70px;}

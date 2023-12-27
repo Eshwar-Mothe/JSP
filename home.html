@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jsp-ts</title>
+    <link rel="stylesheet" href="home.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">  
+</head>
+<body>
+    
+    <div id="background-main">
+        <div class="logo">
+            <aside><img src="Jana-Sena-Logo.png" alt="logo"></aside>
+            <div class="nav-bar">
+                <a href="#">Home </a><span> | </span>
+                <a href="registration.html">Registration </a><span> | </span>
+                <a href="#">Activities </a><span> | </span>
+                <a href="#">About &nbsp;</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="gallery">
+        <!-- 1stpic -->
+        <div class="first"><img src="https://content.tupaki.com/en/feeds/2023/10/04/166579-ts.gif" alt="image1"></div>
+        <div class="second"><img src="https://e0.pxfuel.com/wallpapers/423/244/desktop-wallpaper-janasena-flag-emblem-animation-by-spiidos-janasena-party.jpg" alt="image2"></div>
+        <div class="third"><img src="https://e0.pxfuel.com/wallpapers/500/733/desktop-wallpaper-janasena-party-janasena-logo.jpg" alt="image3"></div>
+        <div class="fourth"><img src="https://e0.pxfuel.com/wallpapers/0/588/desktop-wallpaper-janasena-flag-janasena-party.jpg" alt="image4"></div>
+        <div class="fifth"><img src="https://cdn.gulte.com/wp-content/uploads/2023/11/230623ap-politics4a.jpg" alt="image5"></div>
+        <button onclick="showDiv('first')" id="button_first">1</button>
+        <button onclick="showDiv('second')" id="button_second">2</button>
+        <button onclick="showDiv('third')" id="button_third">3</button>
+        <button onclick="showDiv('fourth')" id="button_fourth">4</button>
+        <button onclick="showDiv('fifth')" id="button_fifth">5</button>
+
+        <script>
+            var currentIndex = 0;
+            var divClasses = ['first', 'second', 'third', 'fourth', 'fifth'];
+            var interval;
+    
+            function showDiv(divClass) {
+                clearInterval(interval);
+    
+                // Hide all divs first
+                document.querySelectorAll('.gallery > div').forEach(div => {
+                    div.style.display = 'none';
+                });
+    
+                // Remove 'active' class from all buttons
+                document.querySelectorAll('.gallery button').forEach(button => {
+                    button.classList.remove('active');
+                });
+    
+                // Show the selected div
+                document.querySelector(`.${divClass}`).style.display = 'block';
+    
+                // Add 'active' class to the corresponding button
+                document.getElementById(`button_${divClass}`).classList.add('active');
+    
+                // Find the index of the clicked button in the divClasses array
+                var clickedIndex = divClasses.indexOf(divClass);
+    
+                // Set the currentIndex to the clickedIndex
+                currentIndex = clickedIndex;
+    
+                interval = setInterval(() => {
+                    currentIndex = (currentIndex + 1) % divClasses.length;
+                    showDiv(divClasses[currentIndex]);
+                }, 3000);
+            }
+    
+            // Start the slideshow when the page loads
+            showDiv(divClasses[currentIndex]);
+        </script>
+</body>
+</html>
