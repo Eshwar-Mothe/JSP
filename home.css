@@ -100,3 +100,24 @@ img {
 .gallery #show_first {
     margin-left: 15rem;
 }
+
+/* Media Queries */
+@media (max-width: 768px) {
+    /* Added: Media query for smaller screens */
+    .nav-bar {
+        font-size: 18px;
+    }
+
+    .gallery img {
+        margin-top: 1rem;
+    }
+
+    .gallery button {
+        margin-top: 0.5rem;
+        margin-left: 0.3rem;
+    }
+
+    .gallery #show_first {
+        margin-left: 0.5rem;
+    }
+}
