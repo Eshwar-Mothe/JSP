@@ -53,10 +53,11 @@ img {
 
 .gallery{height: 35rem;}
 .gallery img{
-    margin-top: 3rem;
+    margin-top: 1rem;
     background-color: #1a3b57;
     width: 97%;
-    height: 30rem;
+    /* height: 32rem; */
+    height: auto;
     margin-left: 1%;
 }
 
@@ -95,6 +96,7 @@ img {
     border: none;
     background-color: var(--bgColor);
     color: var(--textColor);
+    display: none;
 }
 
 .gallery #show_first {
@@ -103,9 +105,15 @@ img {
 
 /* Media Queries */
 @media (max-width: 768px) {
-    /* Added: Media query for smaller screens */
     .nav-bar {
-        font-size: 18px;
+        font-size: 10px;
+        margin-top: 5px;
+    }
+
+    img {
+        height: auto;
+        width: 40%;
+        margin-top: -10px;
     }
 
     .gallery img {
@@ -115,9 +123,32 @@ img {
     .gallery button {
         margin-top: 0.5rem;
         margin-left: 0.3rem;
+        display: none;
     }
 
     .gallery #show_first {
         margin-left: 0.5rem;
+    }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+    /* Adjust styles for tablets */
+}
+
+/* Mobile devices */
+@media (max-width: 480px) {
+    /* Adjust styles for smaller screens */
+}
+
+/* Small mobile devices */
+@media (max-width: 320px) {
+    /* Further adjustments for smaller screens */
+}
+
+@media (max-width: 768px) {
+    .gallery {
+        height: auto; /* You can adjust this based on your design */
+        max-width: 100%; /* Ensures the gallery takes full width on smaller screens */
     }
 }

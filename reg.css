@@ -151,3 +151,45 @@ p{
 }
 button{margin-left: 70px;}
 button{margin-top: 70px;}
+
+/* media queries */
+
+@media (max-width: 768px) {
+    .flex-container a, .karimnagar a {
+        width: 25%;
+        font-size: 13px;
+        /* Adjust for smaller screens */
+    }
+}
+@media (max-width: 768px) {
+    .flex-container a, .karimnagar a {
+    margin: 10px;
+    margin-top: 8px;
+    margin-left: 5px;
+    height: 4rem;
+    line-height: 4rem;
+    font-size: 10px;
+    width: 28% !important; /* Adjust for smaller screens */
+    }
+}
+
+/* @media (max-width: 480px) {
+    .flex-container a {
+        width: 10%; /* Full width for the smallest screens */
+    /* }
+} */
+
+@media (max-width: 768px) {
+    .karimnagar a {
+        margin-top: 7px;
+        margin-left: -5px;
+        height: 4rem;
+        line-height: 4rem;
+        font-size: 9px;
+        width: 30% !important;
+        /* Adjust for smaller screens */
+    }
+    .karimnagar{
+        margin-left: 2.5rem;
+    }
+}
