@@ -7,10 +7,6 @@
     --headingFont: 20px;
 }
 
-body {
-    background-color: rgb(255, 235, 210);
-}
-
 #background-main {
     height: 95px;
 }
@@ -111,10 +107,13 @@ img {
 
 /* Media Queries */
 @media (max-width: 768px) {
-    
+    .nav-bar {
+        font-size: 10px;
+        margin-top: 5px;
+    }
 
     img {
-        /* height: auto; */
+        height: auto;
         width: 40%;
         margin-top: -10px;
     }
@@ -156,44 +155,16 @@ img {
         /* You can adjust this based on your design */
         max-width: 100%;
         /* Ensures the gallery takes full width on smaller screens */
-        margin-top: 2rem;
+        margin-top: -2rem;
     }
 
-    #background-main img{
+    #background-main{
+        margin-top: 5px;
+    }
+
+    #background-main img {
         margin-top: -5px;
         width: 34%;
         height: 70px;
-    }
-    .nav-bar {
-        position: relative;
-        float: right;
-        display: block;
-        padding: 15px;
-        font-size: 25px;
-        float: right;
-        font-weight: bold;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
-    
-    .nav-bar a {
-        text-decoration: none;
-        color: var(--textColor);
-    
-    }
-    .nav-bar a {
-        text-decoration: none;
-        color: var(--textColor);
-    
-    }
-    .nav-bar a:hover {
-        display: inline-block;
-        transition: .1s ease-in-out;
-        border-style: none none solid none;
-        border-width: 2px;
-        border-color: orange;
-    }
-    .nav-bar {
-        font-size: 10px;
-        margin-top: 5px;
     }
 }
