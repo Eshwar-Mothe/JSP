@@ -1,7 +1,7 @@
 body{
     background-color: rgba(0, 0, 0, 0.822); /* Adjust the alpha value for transparency */
     background-image: url('bg-removebg-preview.png');
-    background-position: 50% 50%;
+    background-position: 49% 40%;
     background-repeat: no-repeat;
     background-size: 40%; /* Ensure the background covers the entire viewport */
     margin: 0; /* Remove default margin */
@@ -13,13 +13,10 @@ body{
 h1{
     background: rgba(7, 6, 6, 0.562);
     font-size: 70px;
+    margin-top: -2rem;
     color: white;
     text-align: center;
     align-items: center;
-}
-
-h1 img{
-    height: 15rem;
 }
 
 /* Add CSS styles for the fade-out animation */
