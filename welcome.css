@@ -32,3 +32,10 @@ h1 img{
 #welcomePage.fade-out {
     opacity: 0;
 }
+
+@media (max-width: 320px) {
+    /* Further adjustments for smaller screens */
+    body{
+        background-size: 70%;
+    }
+}

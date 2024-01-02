@@ -1,0 +1,385 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Member Information</title>
+    <style>
+        :root {
+    --textColor: red;
+    --buttonColor: #ffc400;
+    --bgColor: #2d618c;
+    --HHwidth: 75%;
+    --HHmarginLeft: 11%;
+    --headingFont: 20px;
+}
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background: #a84343;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav {
+            background: #eee;
+            padding: 10px;
+        }
+
+        section {
+            margin-top: 1rem;
+            padding: 5px;
+            text-align: left;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: auto;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        .nav-bar {
+            position: relative;
+            float: right;
+            display: block;
+            padding: 10px;
+            font-size: 25px;
+            float: right;
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .nav-bar a {
+            text-decoration: none;
+            color: var(--textColor);
+
+        }
+        td{
+            padding: 2px;
+            text-align: center;
+        }
+
+        td a{
+            text-decoration: none;
+            color: inherit;
+        }
+
+        th {
+            text-align: center;
+            background-color: #ff1c1c;
+            color: #fff;
+        }
+
+        tr:nth-child(even) {
+            background-color: #660101;
+            /* Alternate background for even rows */
+            color: white;
+        }
+
+        .image-preview {
+            width: 70px;
+            height: 70px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Member Information</h1>
+    </header>
+
+    <nav>
+        <div class="nav-bar">
+            <a href="#">Home </a><span> | </span>
+            <a href="registration.html">Joinings</a><span> | </span>
+            <a href="#">Activities </a><span> | </span>
+            <a href="#">About &nbsp;</a>
+        </div>
+
+    </nav>
+
+    <section>
+        <h2 style="color: var(--textColor);">District Name: <span style="color: black;">District Name</span></h2>
+        <h2 style="color: var(--textColor);">Constituency Name: <span style="color: black;">Constituency Name</span></h2>
+        <h2 style="color: var(--textColor);">Village Name: <span style="color: black;">Village Name</span></h2>
+
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID.no</th>
+                    <th>Name</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                    <th>Village</th>
+                    <th>Constituency</th>
+                    <th>District</th>
+                    <th>Image Preview</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Sample data, replace with actual data -->
+                <tr>
+                    <td>1</td>
+                    <td>John Doe</td>
+                    <td>1234567890</td>
+                    <td>johndoe@example.com</td>
+                    <td>Village1</td>
+                    <td>Constituency1</td>
+                    <td>District1</td>
+                    <td><img src="bg-removebg-preview.png" alt="Image Preview" class="image-preview"></td>
+                </tr>
+                <!-- Add more rows as needed -->
+                <tr>
+                    <td><a href="profile.html">1</a></td>
+                    <td>John Doe</td>
+                    <td>1234567890</td>
+                    <td>johndoe@example.com</td>
+                    <td>Village1</td>
+                    <td>Constituency1</td>
+                    <td>District1</td>
+                    <td><img src="bg-removebg-preview.png" alt="Image Preview" class="image-preview"></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>John Doe</td>
+                    <td>1234567890</td>
+                    <td>johndoe@example.com</td>
+                    <td>Village1</td>
+                    <td>Constituency1</td>
+                    <td>District1</td>
+                    <td><img src="bg-removebg-preview.png" alt="Image Preview" class="image-preview"></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>John Doe</td>
+                    <td>1234567890</td>
+                    <td>johndoe@example.com</td>
+                    <td>Village1</td>
+                    <td>Constituency1</td>
+                    <td>District1</td>
+                    <td><img src="bg-removebg-preview.png" alt="Image Preview" class="image-preview"></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>John Doe</td>
+                    <td>1234567890</td>
+                    <td>johndoe@example.com</td>
+                    <td>Village1</td>
+                    <td>Constituency1</td>
+                    <td>District1</td>
+                    <td><img src="bg-removebg-preview.png" alt="Image Preview" class="image-preview"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><img src="#" alt="Image Preview" class="image-preview"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><img src="#" alt="Image Preview" class="image-preview"></td>
+                </tr><tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><img src="#" alt="Image Preview" class="image-preview"></td>
+                </tr><tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><img src="#" alt="Image Preview" class="image-preview"></td>
+                </tr><tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><img src="#" alt="Image Preview" class="image-preview"></td>
+                </tr><tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><img src="#" alt="Image Preview" class="image-preview"></td>
+                </tr><tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><img src="#" alt="Image Preview" class="image-preview"></td>
+                </tr><tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><img src="#" alt="Image Preview" class="image-preview"></td>
+                </tr><tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><img src="#" alt="Image Preview" class="image-preview"></td>
+                </tr><tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><img src="#" alt="Image Preview" class="image-preview"></td>
+                </tr><tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><img src="#" alt="Image Preview" class="image-preview"></td>
+                </tr><tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><img src="#" alt="Image Preview" class="image-preview"></td>
+                </tr><tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><img src="#" alt="Image Preview" class="image-preview"></td>
+                </tr><tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><img src="#" alt="Image Preview" class="image-preview"></td>
+                </tr><tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><img src="#" alt="Image Preview" class="image-preview"></td>
+                </tr><tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><img src="#" alt="Image Preview" class="image-preview"></td>
+                </tr><tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><img src="#" alt="Image Preview" class="image-preview"></td>
+                </tr><tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><img src="#" alt="Image Preview" class="image-preview"></td>
+                </tr><tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><img src="#" alt="Image Preview" class="image-preview"></td>
+                </tr><tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><img src="#" alt="Image Preview" class="image-preview"></td>
+                </tr><tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><img src="#" alt="Image Preview" class="image-preview"></td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </section>
+
+</body>
+
+</html>

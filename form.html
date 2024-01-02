@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="reg.css">
+    <title>JSP-FORM</title>
+</head>
+
+<body>
+    <h1 class="head">Telanagana State JanaSena Party Membership Program</h1>
+    <div class="form">
+        <p class="select">Membership Form</p>
+        <form action="success.html" method="post">
+            <span id="firstspan">Fields with '<span style="color: red;">*</span>' are mandatory</span><br>
+
+            <div id="photo"><a href="#" onclick="triggerFileInput()">Upload Photo</a> </div><br><br>
+
+            <label for="fname">First Name<span style="color: red;">*</span>: </label>
+            <input type="text" placeholder="Enter your first name" required>
+
+            <label for="lname">Last Name<span style="color: red;">*</span>: </label>
+            <input type="text" placeholder="Enter your last name" required>
+
+            <label for="gender" required>Select your Gender<span style="color: red;">*</span>: </label><br>
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="female" >Female</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="others">Others</label>
+            <input type="radio" id="others" name="gender" value="Others">
+
+            <label for="fname" required>Mother Name<span style="color: red;">*</span>: </label>
+            <input type="motext" placeholder="Enter you mother name"><br><br><br<br>
+
+            <input type="radio" id="father" name="guardian" value="Father" checked onclick="toggleInput()">
+            <label for="father" required>Father</label>
+
+            <input type="radio" id="Husband" name="guardian" value="Husband" onclick="toggleInput()">
+            <label for="Husband" required>Husband</label>
+
+            <label id="faname-label" for="faname" required>Father Name<span style="color: red;">*</span>: </label>
+            <input id="faname" type="text" placeholder="Enter your father name">
+
+            <label id="hname-label" style="display: none;" for="hname">Husband Name<span style="color: red;">*</span>:
+            </label>
+            <input id="hname" style="display: none;" type="text" placeholder="Enter your husband name">
+
+            <label for="mobile" required>Mobile:<span style="color: red;">*</span>: </label>
+            <input type="text" placeholder="Enter your Mobile number">
+
+            <label for="mail" required>E-mail <span style="color: red;">*</span>: </label>
+            <input type="email" placeholder="Enter your E-mail">
+
+            <label for="occupation">Occupation:</label>
+            <input type="text" placeholder="Enter your Occupation">
+
+            <legend>Address:</legend>
+
+            <label for="Address">H.No:</label>
+            <input type="text" placeholder="Enter your house number">
+
+            <label for="street">Area:</label>
+            <input type="text" placeholder="Enter your street">
+
+            <label for="village">Village:</label>
+            <!-- <input type="text" placeholder="Select your Village/town"> -->
+            <select id="village" class="village1" required>
+                <option value="1">Bommanapalle</option>
+                <option value="1" selected>CHIGURUMAMIDI</option>
+                <option value="1">Indurthi</option>
+                <option value="1">Kondapur</option>
+                <option value="1">Mudimanikyam</option>
+                <option value="1">Mulakanoor</option>
+                <option value="1">Nawabpeta</option>
+                <option value="1">rekencha</option>
+                <option value="1">sundaragiri</option>
+                <option value="1">Valampalle</option>
+            </select>
+            <label for="Mandal" aria-required="true">Mandal: </label>
+            <input type="text" disabled value="CHIGURUMAMIDI">
+
+            <label for="District" aria-required="true">District: </label>
+            <input type="text" disabled value="KARIMNAGAR">
+
+            <label for="State" aria-required="true">State:</label>
+            <input type="text" disabled value="TELANGANA">
+
+            <label for="PINCODE" aria-required="true">PIN: </label>
+            <input type="text">
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+
+
+
+        </form>
+    </div>
+    <div class="advantages">
+        <h4>Membership Benefits</h4>
+        <li>Lorem ipsum dolor sit amet. Aut totam quia qui corporis</li>
+        <li>Lorem ipsum dolor sit amet. Aut totam quia qui corporis</li>
+        <li>Lorem ipsum dolor sit amet. Aut totam quia qui corporis</li>
+        <li>Lorem ipsum dolor sit amet. Aut totam quia qui corporis</li>
+        <li>Lorem ipsum dolor sit amet. Aut totam quia qui corporis</li>
+        <li>Lorem ipsum dolor sit amet. Aut totam quia qui corporis</li>
+        <li>Lorem ipsum dolor sit amet. Aut totam quia qui corporis</li>
+        <li>Lorem ipsum dolor sit amet. Aut totam quia qui corporis</li>
+        <li>Lorem ipsum dolor sit amet. Aut totam quia qui corporis</li>
+    </div>
+    <script>
+        function toggleInput() {
+            var fatherRadio = document.getElementById('father');
+            var husbandRadio = document.getElementById('Husband');
+            var fatherLabel = document.getElementById('faname-label');
+            var fatherInput = document.getElementById('faname');
+            var husbandLabel = document.getElementById('hname-label');
+            var husbandInput = document.getElementById('hname');
+
+            if (fatherRadio.checked) {
+                fatherLabel.style.display = 'flex';
+                fatherInput.style.display = 'flex';
+
+                husbandLabel.style.display = 'none';
+                husbandInput.style.display = 'none';
+            } else if (husbandRadio.checked) {
+                fatherLabel.style.display = 'none';
+                fatherInput.style.display = 'none';
+
+                husbandLabel.style.display = 'flex';
+                husbandInput.style.display = 'flex';
+            }
+        }
+    </script>
+
+    <script>
+        function triggerFileInput() {
+        // Create a hidden file input element
+        var fileInput = document.createElement('input');
+        fileInput.type = 'file';
+        fileInput.accept = 'image/*'; // Only allow image files
+        fileInput.style.display = 'none';
+
+        // Append the file input to the document body
+        document.body.appendChild(fileInput);
+
+        // Trigger a click on the file input
+        fileInput.click();
+
+        // Listen for file selection
+        fileInput.addEventListener('change', function() {
+            // Handle the selected file (you can perform further actions here)
+            var selectedFile = fileInput.files[0];
+            console.log('Selected File:', selectedFile.name);
+
+            // Display the selected image in the photo div
+            displayImageInPhoto(selectedFile);
+
+            // Remove the file input from the DOM
+            document.body.removeChild(fileInput);
+        });
+    }
+
+    function displayImageInPhoto(file) {
+        // Get the photo div
+        var photoDiv = document.getElementById('photo');
+
+        // Create a FileReader to read the selected file
+        var reader = new FileReader();
+
+        // Set a callback function to handle the file reading
+        reader.onload = function(e) {
+            // Set the background image of the photo div to the read data
+            photoDiv.style.backgroundImage = 'url(' + e.target.result + ')';
+            photoDiv.style.backgroundSize = 'cover';
+            photoDiv.style.backgroundRepeat = 'no-repeat';
+            photoDiv.style.color = 'transparent'; // Hide text content
+        };
+
+        // Read the selected file as a data URL (base64)
+        reader.readAsDataURL(file);
+    }
+    </script>
+
+</body>
+
+</html>
