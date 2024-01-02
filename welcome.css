@@ -33,7 +33,7 @@ h1 img{
     opacity: 0;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 768px) {
     /* Further adjustments for smaller screens */
     body{
         background-position: 49% 50%;
