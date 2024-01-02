@@ -108,18 +108,21 @@ img {
 /* Media Queries */
 @media (max-width: 768px) {
     .nav-bar {
-        font-size: 10px;
+        font-size: 12px;
         margin-top: 5px;
     }
 
     img {
         height: auto;
-        width: 40%;
-        margin-top: -10px;
+        width: 50%;
+    }
+
+    .background-main{
+        margin-bottom: 12rem;
     }
 
     .gallery img {
-        margin-top: 1rem;
+        margin-top: 3rem;
         height: auto;
     }
 
