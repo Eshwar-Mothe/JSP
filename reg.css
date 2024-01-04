@@ -1,5 +1,9 @@
 body {
-    background-color: rgb(255, 235, 210);
+    background-color: rgb(252, 225, 193);
+    /* background-image: url(blackNW.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 40%; */
 }
 
 .head {
@@ -205,6 +209,104 @@ button {
     margin-top: 70px;
 }
 
+
+/* Admin Login Styles */
+
+.admin, .member {
+    float: left;
+    background-color: rgba(255, 255, 255, 0);
+    width: 48%;
+    height: 30rem;
+    border: 2px solid rgb(68, 24, 24);
+    /* margin-top: 20px; */
+    overflow: hidden;
+}
+
+.member {
+    float: right;
+    background-color: rgb(255, 255, 255);
+}
+
+.admin a, .member a {
+    text-decoration: none;
+    color: rgb(58, 23, 23);
+    font-size: 20px;  
+}
+.admin button, .member button{
+    padding: 5px;
+    text-align: center;
+    background-color: rgb(201, 197, 197);
+    border: none;
+    /* background: none; */
+    padding: 15px;
+    margin-left: 15rem;
+    /* margin-bottom: 5rem; */
+    margin-top: 5rem;
+    
+}
+.admin button{
+    margin-top: 10rem;
+    width: 30%;
+    margin-left: 34%;
+}
+.member button{
+    margin-left: 18rem;
+}
+.arrow-container {
+    /* position: fixed; */
+    bottom: 20px;
+    margin-top: 10%;
+    margin-left: 48%;
+    transform: translateX(-50%);
+    animation: bounce 1s ease-in-out infinite;
+}
+
+.arrow {
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 50px solid #333; /* Change the color as needed */
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(50px);
+    }
+
+    60% {
+        transform: translateY(15px);
+    }
+}
+
+.flex-container a {
+    transition: 1s ease-in-out;
+    /* Add smooth color transition */
+}
+.admin p, .member p{
+    color: white;
+    background-color: rgb(199, 58, 58);
+    padding: 10px;
+    text-transform: uppercase;
+}
+.admin p:nth-child(2), .member p:nth-child(2){
+    
+    background: none;
+    text-align: left;
+    text-transform: capitalize;
+    color: rgb(73, 33, 33);
+}
+.member p:nth-child(2){float: right;}
+
+marquee{
+    background-color: red;
+    color: white;
+    padding: 10px;
+}
 /* media queries */
 
 @media (max-width: 768px) {
@@ -231,12 +333,6 @@ button {
         /* Adjust for smaller screens */
     }
 }
-
-/* @media (max-width: 480px) {
-    .flex-container a {
-        width: 10%; /* Full width for the smallest screens */
-/* }
-} */
 
 @media (max-width: 768px) {
     .karimnagar a {
@@ -278,12 +374,28 @@ button {
     .advantages {
         display: none;
     }
+
     .form #firstspan {
         margin-left: 1rem;
     }
 }
 
-.flex-container a {
-    transition: 1s ease-in-out;
-    /* Add smooth color transition */
+
+@media (max-width: 100vh) {
+    .admin, .member{
+        float: none;
+        width: auto;
+        height: auto;
+        align-items: center;
+    }
+    .member button{
+        margin-left: 30%;
+        width: 40%;
+    }
+    .admin button{
+        margin-top: 10%;
+    }
+    .arrow{
+        margin-left: -8%;
+    }
 }
