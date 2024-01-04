@@ -7,7 +7,7 @@ body {
 }
 
 .head {
-    color: red;
+    color: rgb(82, 41, 41);
     text-align: center;
     text-decoration: underline;
     text-decoration-color: black;
@@ -45,16 +45,16 @@ p {
 }
 
 .flex-container a {
-    width: 10rem;
-    margin: 13px;
-    margin-top: 10px;
-    margin-left: 15px;
+    width: 16rem;
+    margin: AUTO;
+    margin-top: 5px;
+    margin-left: auto;
     height: 5rem;
     line-height: 5rem;
-    font-size: 1rem;
+    font-size: AUTO;
     font-weight: bold;
     border: 2px solid silver;
-    border-radius: 9px;
+    border-radius: 20px;
     text-align: center;
     background-color: burlywood;
     cursor: pointer;
