@@ -331,7 +331,7 @@ marquee{
         /* Adjust for smaller screens */
     }
     .flex-container a{
-        width: 7rem;
+        width: 11rem;
         margin: AUTO;
         margin-top: 10px;
         /* margin-left: 15px; */
