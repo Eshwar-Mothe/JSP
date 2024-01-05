@@ -33,9 +33,9 @@ h1{
 }
 
 @media (max-width: 100vh) {
-    h1 {
+    /* h1 {
         color: red;
-    }
+    } */
 
     body {
         background-position: 50% 45%;
