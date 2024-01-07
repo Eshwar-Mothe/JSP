@@ -1,35 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <link rel="stylesheet" href="welcome.css" />
+  </head>
 
-<head>
-    <link rel="stylesheet" href="welcome.css">
-</head>
-
-<body>
-
+  <body>
     <!-- Welcome Page -->
     <div id="welcomePage">
-        <h1>Welcome Janasainiks!</h1>
-
-
+      <h1>Welcome Janasainiks!</h1>
     </div>
 
     <script>
-        // Function to add the 'fade-out' class and redirect after a certain period
-        function fadeOutAndRedirect() {
-            // Add the 'fade-out' class to trigger the fade-out animation
-            welcomePage.classList.add('fade-out');
+      // Function to add the 'fade-out' class and redirect after a certain period
+      function fadeOutAndRedirect() {
+        // Add the 'fade-out' class to trigger the fade-out animation
+        welcomePage.classList.add("fade-out");
 
-            // Wait for the animation to complete (2 seconds) and then redirect
-            setTimeout(() => {
-                // Change the URL to your main content page
-                window.location.href = 'home.html';
-            }, 3000);
-        }
+        // Wait for the animation to complete (2 seconds) and then redirect
+        setTimeout(() => {
+          // Change the URL to your main content page
+          window.location.href = "home.html";
+        }, 3000);
+      }
 
-        // Wait for 3 seconds and then call the fadeOutAndRedirect function
-        setTimeout(fadeOutAndRedirect, 3000);
+      // Wait for 3 seconds and then call the fadeOutAndRedirect function
+      setTimeout(fadeOutAndRedirect, 3000);
     </script>
-</body>
-
+  </body>
 </html>
