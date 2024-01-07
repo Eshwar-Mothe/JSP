@@ -356,6 +356,9 @@ marquee{
         line-height: 4rem;
         font-size: 9px;
         width: 30% !important;
+        align-items: center;
+        justify-content: space-around;
+
         /* Adjust for smaller screens */
     }
 
