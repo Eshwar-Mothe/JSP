@@ -10,3 +10,5 @@ MEDIPALLY MANDAL HAS NO VILLAES TO SHOW NEED TO SORT IT OUT
 UPPAL MANDAL HAS NO VILLAES TO SHOW NEED TO SORT IT OUT
 
 Achampet has no data to show
+
+Vemulapally has no data to show.
