@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Member Information</title>
+    <!-- <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="reg.css"> -->
     <style>
         :root {
-    --textColor: red;
-    --buttonColor: #ffc400;
-    --bgColor: #2d618c;
-    --HHwidth: 75%;
-    --HHmarginLeft: 11%;
-    --headingFont: 20px;
-}
+            --textColor: red;
+            --buttonColor: #ffc400;
+            --bgColor: #2d618c;
+            --HHwidth: 75%;
+            --HHmarginLeft: 11%;
+            --headingFont: 20px;
+        }
+
         body {
             margin: 0;
             padding: 0;
@@ -66,12 +69,13 @@
             color: var(--textColor);
 
         }
-        td{
+
+        td {
             padding: 2px;
             text-align: center;
         }
 
-        td a{
+        td a {
             text-decoration: none;
             color: inherit;
         }
@@ -93,6 +97,39 @@
             height: 70px;
             object-fit: cover;
         }
+
+        @media (max-width: 100vh) {
+            .nav-bar {
+                font-size: 12px;
+                margin-top: 5px;
+            }
+
+            header {
+                font-size: 10px;
+                width: 100%;
+            }
+
+            h2 {
+                font-size: 7px;
+            }
+
+            table {
+                width: 100%;
+                font-size: 7px;
+            }
+
+            th,
+            td {
+                padding: 5px;
+                font-weight: bold;
+            }
+
+            .image-preview {
+                width: 30px;
+                height: 30px;
+                object-fit: cover;
+            }
+        }
     </style>
 </head>
 
@@ -101,7 +138,6 @@
     <header>
         <h1>Member Information</h1>
     </header>
-
     <nav>
         <div class="nav-bar">
             <a href="#">Home </a><span> | </span>
@@ -112,9 +148,11 @@
 
     </nav>
 
+
     <section>
         <h2 style="color: var(--textColor);">District Name: <span style="color: black;">District Name</span></h2>
-        <h2 style="color: var(--textColor);">Constituency Name: <span style="color: black;">Constituency Name</span></h2>
+        <h2 style="color: var(--textColor);">Constituency Name: <span style="color: black;">Constituency Name</span>
+        </h2>
         <h2 style="color: var(--textColor);">Village Name: <span style="color: black;">Village Name</span></h2>
 
 
@@ -203,169 +241,8 @@
                     <td></td>
                     <td></td>
                     <td><img src="#" alt="Image Preview" class="image-preview"></td>
-                </tr><tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td><img src="#" alt="Image Preview" class="image-preview"></td>
-                </tr><tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td><img src="#" alt="Image Preview" class="image-preview"></td>
-                </tr><tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td><img src="#" alt="Image Preview" class="image-preview"></td>
-                </tr><tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td><img src="#" alt="Image Preview" class="image-preview"></td>
-                </tr><tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td><img src="#" alt="Image Preview" class="image-preview"></td>
-                </tr><tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td><img src="#" alt="Image Preview" class="image-preview"></td>
-                </tr><tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td><img src="#" alt="Image Preview" class="image-preview"></td>
-                </tr><tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td><img src="#" alt="Image Preview" class="image-preview"></td>
-                </tr><tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td><img src="#" alt="Image Preview" class="image-preview"></td>
-                </tr><tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td><img src="#" alt="Image Preview" class="image-preview"></td>
-                </tr><tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td><img src="#" alt="Image Preview" class="image-preview"></td>
-                </tr><tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td><img src="#" alt="Image Preview" class="image-preview"></td>
-                </tr><tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td><img src="#" alt="Image Preview" class="image-preview"></td>
-                </tr><tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td><img src="#" alt="Image Preview" class="image-preview"></td>
-                </tr><tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td><img src="#" alt="Image Preview" class="image-preview"></td>
-                </tr><tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td><img src="#" alt="Image Preview" class="image-preview"></td>
-                </tr><tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td><img src="#" alt="Image Preview" class="image-preview"></td>
-                </tr><tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td><img src="#" alt="Image Preview" class="image-preview"></td>
-                </tr><tr>
+                </tr>
+                <tr>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -375,7 +252,187 @@
                     <td></td>
                     <td><img src="#" alt="Image Preview" class="image-preview"></td>
                 </tr>
-                
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><img src="#" alt="Image Preview" class="image-preview"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><img src="#" alt="Image Preview" class="image-preview"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><img src="#" alt="Image Preview" class="image-preview"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><img src="#" alt="Image Preview" class="image-preview"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><img src="#" alt="Image Preview" class="image-preview"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><img src="#" alt="Image Preview" class="image-preview"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><img src="#" alt="Image Preview" class="image-preview"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><img src="#" alt="Image Preview" class="image-preview"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><img src="#" alt="Image Preview" class="image-preview"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><img src="#" alt="Image Preview" class="image-preview"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><img src="#" alt="Image Preview" class="image-preview"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><img src="#" alt="Image Preview" class="image-preview"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><img src="#" alt="Image Preview" class="image-preview"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><img src="#" alt="Image Preview" class="image-preview"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><img src="#" alt="Image Preview" class="image-preview"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><img src="#" alt="Image Preview" class="image-preview"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><img src="#" alt="Image Preview" class="image-preview"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><img src="#" alt="Image Preview" class="image-preview"></td>
+                </tr>
+
             </tbody>
         </table>
     </section>
